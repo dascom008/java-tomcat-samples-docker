@@ -18,7 +18,6 @@ pipeline {
                 steps {
                     sh "pwd"
                     sh "ls -a"
-                steps {
                     sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
                 }
             }      
